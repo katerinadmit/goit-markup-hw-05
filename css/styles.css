@@ -685,6 +685,10 @@ margin-bottom: 104px;
   display: block;
     height: auto;
 }
+.portfolio-example{
+  position: relative;
+    overflow: hidden;
+}
 .project-item:hover,
 .project-item:focus {
   box-shadow:
@@ -692,6 +696,27 @@ margin-bottom: 104px;
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 
+}
+.project-item:hover  .portfolio-example-text{
+  transform: translateY(0);
+}
+.portfolio-example-text{
+  top: 0;
+    position: absolute;
+    height: 100%;
+    transform: translateY(100%);
+  
+    padding: 63px 24px;
+  
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: rgba(33, 150, 243, 0.9);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu {
   padding-top: 20px;
@@ -752,15 +777,16 @@ margin-bottom: 104px;
   position: fixed;
   top: 0;
   left: 0;
-z-index: 1000;
+z-index: 100;
 
 
   width: 100%;
   height: 100%;
 
   background: rgba(0, 0, 0, 0.2);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-}
+    transition: opacity 250ms   cubic-bezier(0.4, 0, 0.2, 1),
+
+  }
 .backdrop.is-hidden{
   opacity: 0;
   visibility: hidden;
