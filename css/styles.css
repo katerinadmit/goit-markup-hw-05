@@ -149,6 +149,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 16px;
   height: 16px;
   margin-right: 10px;  
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact-icon {
   fill: currentColor;
@@ -162,7 +163,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: #757575;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)r;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -781,6 +782,7 @@ margin-bottom: 104px;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 
 }
+
 .socials-icon {
   fill: currentColor;
 }
